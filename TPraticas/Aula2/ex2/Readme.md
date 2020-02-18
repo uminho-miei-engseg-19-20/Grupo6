@@ -180,6 +180,6 @@ Como demonstrado na alínea anterior, uma execução sobre ***recoverSecretFromC
 Por outro lado, a script ***recoverSecretFromAllComponents-app.py*** obriga a ***presença de todas as componentes*** de modo a descodificar a mensagem. Caso seja efectuada uma tentativa de descodificar a mensagem de acordo com o número descrito pelo ***quorum***, a ***mensagem não será decifrada***. 
 
 #### Exemplificação
-![diagram](https://github.com/uminho-miei-engseg-19-20/Grupo6/blob/master/TPraticas/ex2/screenshoots/b.png)
+![diagram](https://github.com/uminho-miei-engseg-19-20/Grupo6/blob/master/TPraticas/Aula2/ex2/screenshoots/b.png)
 
 Como podemos observar, ***só com a presença de todas as componentes é possível a descodificação*** da mensagem original. Mesmo com a presença das componentes igual ao número indicado pelo ***quorum***, não é possível a descodificação.  
