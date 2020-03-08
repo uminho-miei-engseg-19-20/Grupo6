@@ -1,4 +1,4 @@
-# Aula 2
+# Aula 3
 
 ## Exercício 1
 
@@ -12,15 +12,35 @@
 
 ### Experiência 2.1
 
+https://www.ssllabs.com/ssltest/analyze.html?d=www.portugal.gov.pt
+
+
 ### Pergunta P2.1
-
-
 
 * Grupo 6 - Escolha dois sites de Ministérios de Governos não Europeus.
   1. Anexe os resultados do SSL Server test à sua resposta.
   2. Analise o resultado do SSL Server test relativo ao site escolhido com pior rating. Que comentários pode fazer sobre a sua segurança. Porquê?
   3. É natural que tenha reparado na seguinte informação: "POODLE (SSLv3)" na secção de detalhe do protocolo. O que significa, para efeitos práticos?
 
+#### Ministério da Educação do Brasil
+
+1. https://www.ssllabs.com/analyze.html?d=www.mec.gov.br&s=13.107.246.10&latest
+ **Resultado**: A
+
+#### Ministério da Saúde do Brasil
+
+1. https://www.ssllabs.com/ssltest/analyze.html?d=www.saude.gov.br&latest
+
+**Resultado**: F
+ 
+2. O resultado geral por si só já dá uma indicação de que a segurança implementada é pouca ou muito fraca. Analisando o resultado com mais atenção, podemos verificar que o servidor usa várias *cipher suites* classificadas como fracas e está vulneravel a ataques **Zombie POODLE**, **GOLDENDOODLE** e **OpenSSL 0-Length**. É comum que, na área da saúde, a segurança seja mais relaxada, para permitir interoperabilidade. Obviamente que tal não deveria acontecer, especialmente porque se lida com dados sensíveis 
+
+3. POODLE é um atack *man-in-the-middle* que explora uma falha no SSL 3.0. Caso o servidor suporte esta versão do SSL. é possível, com 256 pedidos, revelar um byte de mensagens encriptadas. O SSL Server Test indica se os servidores estão vulneráveis a este ataque. Nenhum dos dois servidores está, no entanto, o servidor do Ministério da Saúde do Brasil está vulneravel a ataques **Zombie POODLE**, **GOLDENDOODLE** e **OpenSSL 0-Length**.
+
+* https://nvd.nist.gov/vuln/detail/CVE-2014-3566
+* https://blog.qualys.com/technology/2019/04/22/zombie-poodle-and-goldendoodle-vulnerabilities
+* https://www.tripwire.com/state-of-security/vert/zombie-poodle/
+* https://www.tripwire.com/state-of-security/vert/goldendoodle-attack/
 
 ## Exercício 3
 
