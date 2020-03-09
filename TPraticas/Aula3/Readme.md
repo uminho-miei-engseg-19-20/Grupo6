@@ -1,8 +1,19 @@
 # Aula 3
 
 ## Exercício 1
+  O exercicio 1 necessita do código partilhado na página principal do *github* da unidade corricular. De forma a responder aos exercícios, foi criada
+  a diretoria *codigoEx1* onde possui o código original do professor e resultados de execuções.   
 
-### Experiência 1.1
+### Experiência 1.
+Com a execução do comando: 
+- openssl ecparam -name prime256v1 -genkey -noout -out key.pem
+Que possui como resultado o ficheiro *key.pem*   
+   
+  
+Com a execução do comando:
+- openssl req -key key.pem -new -x509 -days 365 -out key.crt  
+É gerado o ficheiro *key.crt*
+
 
 ### Experiência 1.2
 
