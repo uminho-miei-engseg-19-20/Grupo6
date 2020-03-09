@@ -6,12 +6,12 @@
 
 ### Experiência 1.
 Com a execução do comando: 
-- openssl ecparam -name prime256v1 -genkey -noout -out key.pem
+- `openssl ecparam -name prime256v1 -genkey -noout -out key.pem`
 Que possui como resultado o ficheiro *key.pem*   
    
   
 Com a execução do comando:
-- openssl req -key key.pem -new -x509 -days 365 -out key.crt  
+- `openssl req -key key.pem -new -x509 -days 365 -out key.crt`  
 É gerado o ficheiro *key.crt*
 
 
