@@ -25,6 +25,16 @@ Como demonstrado nos *slides* teóricos, aqui encontra-se descrita a execução 
 ![Experiência1_5](https://github.com/uminho-miei-engseg-19-20/Grupo6/blob/master/TPraticas/Aula3/img/5.png)
 ### Pergunta P1.1
 
+O código do exercicio pode ser encontrado [aqui](https://github.com/uminho-miei-engseg-19-20/Grupo6/tree/master/TPraticas/Aula3/codigoEx1/ex1_1)
+
+Aqui encontra-se descrita a execução:   
+- `python init-app.py -m mensagem.txt` Lê mensagem (por stdin ou ficheiro) e guarda em ficheiro o *initComponents*, *pRDashComponents*, *blindComponents*, *pRComponents*, *blindM*  
+- `python blindSignature-app.py -key key.pem -bmsg blindM.txt`A partir das componentes anteriormente geradas guarda em ficheiro a *blindSignature*
+- `python unblind.py -bs blindSignature.txt -bc blindComponents.txt -pr pRDashComp.txt`, efectua a *unblindSignature* a partir do *blindSignature*, *pRDashComponents* e *blindComponents*, guardando o resultado em *signature.txt*
+- `python verify.py -c key.crt` Efectua a verificação a partir de todos os componentes gerados anteriormente
+- De referir a existencia de multiplos ficheiros `args.py` que com auxilida da biblioteca *argParser* permite efetuar o processamento de *flags* em cada uma das *scripts* existentes
+
+
 ## Exercício 2
 
 ### Experiência 2.1
