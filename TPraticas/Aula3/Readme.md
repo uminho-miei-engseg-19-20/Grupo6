@@ -20,7 +20,7 @@ Como demonstrado nos *slides* teóricos, aqui encontra-se descrita a execução 
 
 ![Experiência1_1](https://github.com/uminho-miei-engseg-19-20/Grupo6/blob/master/TPraticas/Aula3/img/1.png)
 ![Experiência1_2](https://github.com/uminho-miei-engseg-19-20/Grupo6/blob/master/TPraticas/Aula3/img/2.png)
-
+![Experiência1_3](https://github.com/uminho-miei-engseg-19-20/Grupo6/blob/master/TPraticas/Aula3/img/3.png)
 
 ### Pergunta P1.1
 
