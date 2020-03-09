@@ -18,7 +18,8 @@ Com a execução do comando:
 ### Experiência 1.2
 Como demonstrado nos *slides* teóricos, aqui encontra-se descrita a execução de cada um dos exemplos referidos:   
 
-![Experiência3_1](https://github.com/uminho-miei-engseg-19-20/Grupo6/blob/master/TPraticas/Aula3/img/1.png)
+![Experiência1_1](https://github.com/uminho-miei-engseg-19-20/Grupo6/blob/master/TPraticas/Aula3/img/1.png)
+![Experiência1_2](https://github.com/uminho-miei-engseg-19-20/Grupo6/blob/master/TPraticas/Aula3/img/2.png)
 
 
 ### Pergunta P1.1
