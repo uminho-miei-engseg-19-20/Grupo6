@@ -28,11 +28,23 @@ O objetivo deste exercício é cada grupo analisar um caso de uso, discutir os v
 
 Uma PME ter claro interesse em processar dados dos clientes, mas também poderá fazer sentido que o façam para os fornecedores de serviços e bens com que trabalha. Nesse sentido, é necessário analizar os riscos de o fazer.
 
-Em primeiro lugar, é preciso definir que dados vão ser processados e para quê. De seguida, é definido o impacto na tríade CIA
+Em primeiro lugar, é preciso definir que dados vão ser processados e para quê. De seguida, é definido o impacto na tríade CIA:
 
-**Perda de Confidencialidade**: 
+* **Perda de Confidencialidade**: Baixo risco, só em certos casos mais sensíveis.
 
-**Medidas:** 
+* **Perda de Integridade ou Disponibilidade:** Baixo risco, pois as empresas poderão atrasar negócios ou entregar incorretamente encomendas, mas não são esperados grandes impactos na generalidade das PMEs
+
+**Nota:** Em alguns casos, o impacto pode ser maior do que o calculado, dependendo da natureza da empresa e da sua área de negócio.
+
+Depois, é estabelecida a probabilidade de ocorrências de ameaças:
+
+* **Rede e recursos técnicos**: Probabilidade média, dado que o sistema estará conectado à *internet*. Com boas práticas, é possivel diminuir a probabilidade de uma ameaça.
+* **Processamento dos dados:** Probabilidade baixa, supondo que as políticas de acesso, quer seja pelos processos, quer pelas pessoas, estão bem definidas e são mantidos *logs* do seu processamento.
+
+* **Setor de negócio e escala de processamento:** Como o setor considerado não tem predisposição alta pare ser atacado e a quantidade de dados processados não é grande.
+
+Finalmente, é feita a avaliação dos riscos. Cruzando o baixo nível de impacto com a baixa probabilidade de ocorência de ameaças concluí-se que o risco é baixo, podendo adotar-se ainda as seguintes medidas para o baixar:
+
   * Documentar a política de privacidade, revendo-a periodicamente.
   * Definir que cargos têm acesso a que informação e alterar as permissões de acesso de acordo com o contrato laboral. 
   * Não dar acesso a mais dados que os estritamente essenciais.
@@ -49,4 +61,8 @@ Em primeiro lugar, é preciso definir que dados vão ser processados e para quê
   * Os utilizadores não devem ser capazes de desativar ou contornar as regras de segurança, bem como não lhes deve ser permitido que instalem ou desativem aplicações não autorizadas.
   * Manter o *software* e o sistema operativo atualizado.
   * Fazer *backups* regulares e garantir o seu sucesso e segurança.
-  * 
+  * Os dispositivos de teletrabalho devem ser previamente autorizados.
+  * Especificar requisitos de segurança e implementar práticas reconhecidas e atualizadas de segurança.
+  * Validar os requisitos de segurança.
+  * Todo o armazenamento de memória deve ser re-escrito antes de ser deitado fora. Se tal for impossível, proceder à sua destruição física.
+  * Não permitir que os dados saíam das instalações físicas, e que estas são estão acessíveis por pessoas autorizadas.
