@@ -22,3 +22,47 @@ Estratégias de *design* para a privacidade
 Página 30
 
 Suppliers of services and goods - Grupos 6
+ que apresenta uma metodologia para avaliar o risco de segurança no processamento de dados pessoais, assim como uma série de casos de uso que permitem calcular o nível de risco baseado na metodologia descrita.
+
+O objetivo deste exercício é cada grupo analisar um caso de uso, discutir os vários passos metodológicos seguidos até à avaliação do risco, identificar o risco existente, e propôr medidas apropriadas para diminuir (ou mitigar) o risco baseado nos anexos A.1, A.2 e A.3 do documento.
+
+Uma PME ter claro interesse em processar dados dos clientes, mas também poderá fazer sentido que o façam para os fornecedores de serviços e bens com que trabalha. Nesse sentido, é necessário analizar os riscos de o fazer.
+
+Em primeiro lugar, é preciso definir que dados vão ser processados e para quê. De seguida, é definido o impacto na tríade CIA:
+
+* **Perda de Confidencialidade**: Baixo risco, só em certos casos mais sensíveis.
+
+* **Perda de Integridade ou Disponibilidade:** Baixo risco, pois as empresas poderão atrasar negócios ou entregar incorretamente encomendas, mas não são esperados grandes impactos na generalidade das PMEs
+
+**Nota:** Em alguns casos, o impacto pode ser maior do que o calculado, dependendo da natureza da empresa e da sua área de negócio.
+
+Depois, é estabelecida a probabilidade de ocorrências de ameaças:
+
+* **Rede e recursos técnicos**: Probabilidade média, dado que o sistema estará conectado à *internet*. Com boas práticas, é possivel diminuir a probabilidade de uma ameaça.
+* **Processamento dos dados:** Probabilidade baixa, supondo que as políticas de acesso, quer seja pelos processos, quer pelas pessoas, estão bem definidas e são mantidos *logs* do seu processamento.
+
+* **Setor de negócio e escala de processamento:** Como o setor considerado não tem predisposição alta pare ser atacado e a quantidade de dados processados não é grande.
+
+Finalmente, é feita a avaliação dos riscos. Cruzando o baixo nível de impacto com a baixa probabilidade de ocorência de ameaças concluí-se que o risco é baixo, podendo adotar-se ainda as seguintes medidas para o baixar:
+
+  * Documentar a política de privacidade, revendo-a periodicamente.
+  * Definir que cargos têm acesso a que informação e alterar as permissões de acesso de acordo com o contrato laboral. 
+  * Não dar acesso a mais dados que os estritamente essenciais.
+  * Manter registos do *hardware*, *software* e rede utilizados para processar os dados.
+  * Manter registo das alterações ao sistema informático. Estas devem ser revistas por um responsável de segurança.
+  * Usar dados fictícios, ao invés de reais, para desenvolver e testar sistemas.
+  * Definir e documentar o processamento de dados por entidades externas (*outsourcing*).
+  * Planear respostas em caso de incidente.
+  * Reportar imediatamente qualquer violação dos dados.
+  * Estabelecer procedimentos para manter a disponibilidade do sistema no caso de violação de dados.
+  * Providenciar treino de *security awareness* aos funcionários.
+  * Manter um sistema de acesso de controlo, com autenticação forte. Evitar contas comuns, dentro do possível. 
+  * Bases de dados e aplicações devem ser alimentados com os dados que efetivamente precisam de processar.
+  * Os utilizadores não devem ser capazes de desativar ou contornar as regras de segurança, bem como não lhes deve ser permitido que instalem ou desativem aplicações não autorizadas.
+  * Manter o *software* e o sistema operativo atualizado.
+  * Fazer *backups* regulares e garantir o seu sucesso e segurança.
+  * Os dispositivos de teletrabalho devem ser previamente autorizados.
+  * Especificar requisitos de segurança e implementar práticas reconhecidas e atualizadas de segurança.
+  * Validar os requisitos de segurança.
+  * Todo o armazenamento de memória deve ser re-escrito antes de ser deitado fora. Se tal for impossível, proceder à sua destruição física.
+  * Não permitir que os dados saíam das instalações físicas, e que estas são estão acessíveis por pessoas autorizadas.
