@@ -43,11 +43,11 @@ Exemplo de script usado para CSRF. Basta o utilizador carregar no *link* para um
 
 ### Pergunta 1.3
 - **Projeto**  
-  1.   
-  2. 
+  1. **CWE-36** - Absolute Path Traversal: O *software* usa *input* externo para construir um caminho que deveria manter-se dentro de uma diretoria restrita. No entanto, se o *input* não for normalizado, um atacante poderá conseguir aceder a outras diretorias fora da destinada, com o uso de caminhos absolutos. Para mitigar esta vulnerabilidade, basta sanitizar o *input* do utilizador, pelo que é bastante fácil de corrigir    
+  2. **CWE-257** - Storing Passwords in a Recoverable Format: Se as *passwords* dos utilizadores forem guardadas num formato recuperável têm a mesma segurança do que se fossem gravadas em texto (*plaintext*). Caso os atacantes consigam ter acesso às mesmas, não há camada extra de proteção para que não seja possível ler as *passwords*. Para garantir a segurança das *passwords* é preciso fazê-las passar por uma função de *hash* antes de serem enviadas para o servidor, ou, no mínimo, ao serem guardadas. Implementar corretamente esta funcionalidade é relativamente fácil, bastando seguir bibliotecas criptográficas para esse efeito. 
 - **Codificação**  
-  1.   
-  2. 
+  1. **CWE-299** - Improper Check for Certificate Revocation: Quando se implementa criptografia assimétrica, é necessário verificar não só que o certificado de chave pública é válido, como também verificar que este não foi revogado. Esta falha pode ser mais grave que outras falhas na verificação de certificados, pois é provável que o certificado tenha sido revogado por ser malicioso. Esta vulnerabilidade é fácil de mitigar, mas pode ser difícil de detetar se quem desenvolve o *software* não tiver uma noção básica de criptografia assimétria.     
+  2. **CWE-393** - Return of Wrong Status Code: Se uma função ou operação retornar um valor ou código incorreto, que não indica erro, mas modifica o funcionamento do programa, poderá causar comportamento inesperado do mesmo. Se a função é usada para decisões críticas ou para devolver informação crítica, é claramente perigoso que dela advenham comportamentos inesperados. A mitigação é relativamente simples, mas pode ser difícil de detetar o problema se os casos em que dá o valor inesperado/incorreto são raros.
 - **Operacional**  
   1.   
   2. 
