@@ -32,12 +32,24 @@ form.submit();
 Exemplo de script usado para CSRF. Basta o utilizador carregar no *link* para uma página com esse código que o pedido é feito para o URL em "form action". Note-se que os campos estão escondidos, para que o utilizador não se aperceba do sucedido.
 
 ### Pergunta 1.2
-| Software        | SLOC  | Limite Inferior de Bugs | Limite Superior de Bugs | Vulnerabilidades Estimadas |
-|-----------------|-------|-------------------------|-------------------------|----------------------------|
-| Facebook        |  62M  |          0,31M          |           3,1M          |                            |
-| Linux 3.1       |  15M  |          0,075M         |          0,75M          |                            |
-| Serviços Google | 2000M |           10M           |           100M          |                            |
-| Carro Moderno   |  100M |           0,5M          |            5M           |                            |
-### Pergunta 1.3
+| Software        | SLOC  | Limite Inferior de Bugs | Limite Superior de Bugs |
+|-----------------|-------|-------------------------|-------------------------|
+| Facebook        |  62M  |          0,31M          |           3,1M          |
+| Linux 3.1       |  15M  |          0,075M         |          0,75M          |
+| Serviços Google | 2000M |           10M           |           100M          |
+| Carro Moderno   |  100M |           0,5M          |            5M           |
 
+É impossível estimar qual o número de vulnerabilidades do *software* apresentado, pois o nº de *bugs* não está diretamente relacionado com o nº de vulnerabilidades.
+
+### Pergunta 1.3
+- **Projeto**  
+  1.   
+  2. 
+- **Codificação**  
+  1.   
+  2. 
+- **Operacional**  
+  1.   
+  2. 
 ### Pergunta 1.4
+As vulnerabilidades dia-zero são vulnerabilidades conhecidas apenas por um grupo restrito de pessoas, não estão publicadas nem têm CVE atribuído. Assim, é pouco provável que sejam corrigidas pois as equipas de desenvolvimento não sabem da sua existência. Estas vulnerabilidades são muitas vezes vendidas no mercado negro por valores avultados. Já as vulnerabilidades não dia-zero são publicamente conhecidas e na grande maioria das vezes são *patched* antes de serem publicadas.
