@@ -44,7 +44,7 @@ Como pudemos constatar pelo comportamento do código nas várias linguagens, exi
 ### Pergunta 1.2
 
 1.  Ao analisar o código, constata-se que o mesmo espera que o _input_ seja apenas de 4 caracteres. Então, para conseguir mudar a variável de controlo _pass_, basta inserir um código de 5 caracteres, onde o último não seja 0 (pois nesse caso, a variável de controlo mantém se a 0, ou seja a _false_, e qualquer outro número avalia a _true_), como por exemplo 12345. Neste caso, a vulnerabilidade está no facto de estarmos a alocar espaço para o _buffer_ sem saber exatamente o espaço que vai ocupar.
-    ![Pergunta1_2root][https://github.com/uminho-miei-engseg-19-20/grupo6/tree/master/tpraticas/aula9/p1_2root.png]
+    ![Pergunta1_2root](https://github.com/uminho-miei-engseg-19-20/grupo6/tree/master/tpraticas/aula9/p1_2root.png)
 
 2.  Neste programa, o desafio é similar, mas desta vez o _buffer_ é bastante maior, e colocar um _input_ com o tamanho do _buffer_ + 1 não é suficiente. Para saber em que posições de memória estavam a ser guardadas as variáveis, acrescentaram-se a seguintes linhas antes de ser chamada a função _gets_:
 
@@ -52,7 +52,7 @@ Como pudemos constatar pelo comportamento do código nas várias linguagens, exi
         printf("Endereço da variável buffer: %p\n",&buffer);
 
     Obtivemos assim o seguinte resultado:
-    ![Pergunta1_2simple][https://github.com/uminho-miei-engseg-19-20/grupo6/tree/master/tpraticas/aula9/p1_2simple.png]
+    ![Pergunta1_2simple](https://github.com/uminho-miei-engseg-19-20/grupo6/tree/master/tpraticas/aula9/p1_2simple.png)
     Podemos observar que existe uma difereça de 12 (decimal) entre um endereço de memória e outro. Logo, para conseguirmos aceder à variável _control_, usamos um _input_ de 64+12+1 = 77 caracteres. Assim, o valor da variável _control_ foi alterado, como podemos confirmar pela mensagem obtida.
 
 ### Pergunta 1.3
@@ -60,13 +60,13 @@ Como pudemos constatar pelo comportamento do código nas várias linguagens, exi
 Olhando para o código, é claro que existe um problema que se prende com a leitura para além do que foi escrito, pois está-se a confiar que o utilizador tenha dado o tamanho correto da palavra/frase que escreveu.
 Caso seja lido mais do que foi escrito, então começamos a ler de partes de memória que guardavam outras informações, particularmente pelo facto do C não inicializar o espaço alocado, e de, neste caso, o conteúdo do _buffer_ não ser limpo entre cada leitura/escrita.
 Podemos ver este comportamento retratado no exemplo seguinte:
-![Pergunta1_3][https://github.com/uminho-miei-engseg-19-20/grupo6/tree/master/tpraticas/aula9/p1_3.png]
+![Pergunta1_3](https://github.com/uminho-miei-engseg-19-20/grupo6/tree/master/tpraticas/aula9/p1_3.png)
 
 ### Pergunta 1.4
 
 Novamente, foi preciso perceber a distância entre a variável _buffer_ e a _control_. Neste caso, estavam à mesma distância que no exemplo anterior (Pergunta 1.2), pelo que se ocupou o espaço do _buffer_ (64 _bytes_) e o _off-set_ (12 _bytes_) com a letra A. Depois, acrescentamos o número 0x61626364, tendo em atenção que a máquina usa a notação _little endian_, ou seja, o primeiro _byte_ é o menos significativo, e o último _byte_ é o mais significativo. Assim, obtivemos o seguinte resultado:
 
-![Pergunta1_4][https://github.com/uminho-miei-engseg-19-20/grupo6/tree/master/tpraticas/aula9/p1_4.png]
+![Pergunta1_4](https://github.com/uminho-miei-engseg-19-20/grupo6/tree/master/tpraticas/aula9/p1_4.png)
 
 ### Pergunta 1.5
 
