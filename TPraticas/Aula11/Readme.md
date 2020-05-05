@@ -25,10 +25,24 @@ Também é possível usar / para se fazer _path traversal_. Com a ajuda do _auto
 Podemos observar também que, ao usar a função _system()_, o programa está vulnerável pois é possível alterar a PATH para que o comando _file_ que é executado tenha outro comportamento que não o esperado, isto porque a função _system()_ usa as variáveis de ambiente do processo-pai.
 
 ```
-export PATH=$PATH:home/mariana/Documents
+export PATH=/usr/local/bin:$PATH
+
+cp file_malicioso /usr/local/bin/file
 ```
 
 Nota: isto muda o PATH temporariamente, para alterar permanentemente, é preciso escrever o caminho no ficheiro **~/.bashrc**.
+
+Assim, podemos correr um _file_malicioso_ com o código que quisermos, por exemplo:
+
+```
+#!/bin/bash
+echo Mwahahahahah
+```
+
+Notas:
+
+1.  Pode-se imitar o comportamento normal do comando para além do que queremos fazer, para o ataque ser menos detetável)
+2.  `chmod +x filem_alicioso` para ser executável.
 
 Se o programa tivesse essas permissões, significaria que, ao ser executado o programa passaria a ter as permissões de _root_. Isto é extremamente perigoso, pois permite a um utilizador com poucas permissões executar comandos como _root_, caso o programa tenha vulnerabilidades como as apresentadas.
 
